@@ -1,51 +1,72 @@
 {
-  "@context": "http://purl.imsglobal.org/ctx/caliper/v1p1",
-  "id":"urn:uuid:a50ca17f-5971-47bb-8fca-4e6e6879001d",
-  "type": "GradeEvent",
-  "actor":{
-    "id":"urn:uuid:0f4fedbe-2227-415f-8553-40731a627171",
-    "type":"Person"
-  },
-  "action": "Graded",
-  "object": {
-    "id": "urn:uuid:1050e852-5edb-4743-92d1-b53466de3a5f",
-    "type": "Attempt",
-    "assignee": "urn:uuid:0f4fedbe-2227-415f-8553-40731a627171",
-    "assignable": {
-      "id":"urn:uuid:c050e852-5edb-4743-92d1-b53466de3a5f",
-      "type": "Assessment"
-    },
-    "count": 35,
-    "dateCreated": "2016-11-15T10:05:00.000Z",
-    "startedAtTime": "2016-11-15T10:05:00.000Z",
-    "endedAtTime": "2016-11-15T10:55:12.000Z"
-  },
-  "eventTime": "2016-11-15T10:57:06.000Z",
-  "edApp": "https://www.hmhco.com/PartnerService",
-  "generated": {
-    "id": "urn:uuid:2050e852-5edb-4743-92d1-b53466de3a5f",
-    "type": "Score",
-    "name": "star",
-    "description": "Star Reading Enterprise Tests",
-    "attempt": "urn:uuid:1050e852-5edb-4743-92d1-b53466de3a5f",
-    "maxScore": 1400,
-    "scoreGiven": 500,
-    "scoredBy": "https://www.hmhco.com/PartnerService",
-    "comment": "The Assessment score from RenLearn # c35603f7a3434e2cb74ef14d60e70f42 taken on date/time for student 0f4fedbe-2227-415f-8553-40731a627171",
-    "dateCreated": "2016-11-15T10:56:00.000Z"
-  },
-  "membership":{
-    "id":"urn:uuid:8f4fedbe-2227-415f-8553-40731a627171",
-    "type":"Membership",
-    "organization":{
-      "id":"urn:uuid:ab570d90-3791-4048-a5ee-759657ddccef",
-      "type":"Organization",
-      "subOrganizationOf":{
-        "id":"urn:uuid:ea827de8-0ce9-4fe4-a28c-eb388bd9eb92",
-        "type":"Organization"
+  "sensor": "https://int.partnerservice.app.hmhco.com/sensor/1",
+  "sendTime": "2019-06-12T15:51:53.865Z",
+  "dataVersion": "http://purl.imsglobal.org/ctx/caliper/v1p1",
+  "data": [
+    {
+      "@context": "http://purl.imsglobal.org/ctx/caliper/v1p1",
+      "type": "GradeEvent",
+      "id": "urn:uuid:68e3e353-fb15-44f4-a39a-603084e90274",
+      "actor": {
+        "id": "urn:uuid:4d557764-2327-4955-8454-675d505019be",
+        "type": "Person"
+      },
+      "action": "Graded",
+      "object": {
+        "endedAtTime": "2019-06-11T19:41:48.739Z",
+        "startedAtTime": "2019-06-11T18:34:45.391Z",
+        "id": "urn:uuid:f651d476-c49e-43ba-8f8b-09cab0dabb56",
+        "type": "Attempt",
+        "dateCreated": "2019-06-11T18:34:45.391Z",
+        "assignable": {
+          "id": "urn:uuid:38ba5da1-7f6a-4dfb-bcb3-e23babb8d28a",
+          "type": "Assessment"
+        },
+        "assignee": "urn:uuid:4d557764-2327-4955-8454-675d505019be",
+        "count": 35
+      },
+      "generated": {
+        "id": "urn:uuid:ccc14cee-9449-4aff-975f-30abc2f3b52b",
+        "type": "Score",
+        "name": "star",
+        "description": "Star Reading Enterprise Tests",
+        "dateCreated": "2019-06-11T19:41:48.739Z",
+        "attempt": "urn:uuid:f651d476-c49e-43ba-8f8b-09cab0dabb56",
+        "maxScore": 1400,
+        "scoreGiven": 615,
+        "comment": "The lexile score from Test Quiz # 38ba5da1-7f6a-4dfb-bcb3-e23babb8d28a taken by student: urn:uuid:4d557764-2327-4955-8454-675d505019be",
+        "scoredBy": "https://www.hmhco.com/PartnerService"
+      },
+      "eventTime": "2019-06-12T15:51:53.865Z",
+      "edApp": {
+        "id": "https://www.hmhco.com/PartnerService",
+        "type": "SoftwareApplication",
+        "extensions": {
+          "applicationCode": "RSR",
+          "disciplineCode": "ED18_RLA"
+        }
+      },
+      "membership": {
+        "id": "urn:uuid:d9596efb-f91f-4ce4-93c1-38fdb5e10689",
+        "type": "Membership",
+        "organization": {
+          "id": "urn:uuid:urn:uuid:d780a533-04ac-42ff-92b6-f2c3673b8486",
+          "type": "CourseSection",
+          "subOrganizationOf": {
+            "id": "urn:uuid:873d15ae-a379-49e3-b32d-6eda7ba649dd",
+            "type": "Organization",
+            "subOrganizationOf": {
+              "id": "urn:uuid:1cffcf2d-7289-4f71-9b34-b0394e29fcdf",
+              "type": "Organization"
+            }
+          },
+          "academicSession": "EOY 2019"
+        },
+        "roles": [
+          "Learner"
+        ],
+        "status": "Active"
       }
-    },
-    "roles":[ "Learner" ],
-    "status": "Active"
-  }
+    }
+  ]
 }
